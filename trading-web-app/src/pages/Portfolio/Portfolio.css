@@ -1,0 +1,193 @@
+.portfolio-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.portfolio-header {
+  margin-bottom: 25px;
+}
+
+.portfolio-header h1 {
+  margin: 0 0 15px 0;
+  color: #172b4d;
+  font-size: 28px;
+}
+
+.portfolio-summary {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-summary {
+    flex-direction: column;
+  }
+}
+
+.summary-value {
+  flex: 1;
+  border-right: 1px solid #e9ecef;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .summary-value {
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+    padding-right: 0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.summary-value h2 {
+  margin: 0 0 5px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.summary-value p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.summary-change {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .summary-change {
+    padding-left: 0;
+  }
+}
+
+.day-change, .total-return {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.day-change:last-child, .total-return:last-child {
+  margin-bottom: 0;
+}
+
+.change-value {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.change-percent {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.portfolio-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.holdings-section, .transactions-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.holdings-section h3, .transactions-section h3 {
+  margin: 0 0 15px 0;
+  color: #172b4d;
+  font-size: 18px;
+}
+
+.portfolio-table, .transactions-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+td {
+  border-bottom: 1px solid #e9ecef;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.symbol {
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.name {
+  color: #6c757d;
+}
+
+.value, .total {
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.return {
+  font-weight: 600;
+}
+
+.return .percent {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.type {
+  font-weight: 600;
+}
+
+.type.buy {
+  color: #28a745;
+}
+
+.type.sell {
+  color: #dc3545;
+}
+
+.stock-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.stock-row:hover {
+  background-color: rgba(97, 218, 251, 0.05);
+}

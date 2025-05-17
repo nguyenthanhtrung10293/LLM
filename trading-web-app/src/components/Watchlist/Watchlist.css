@@ -1,0 +1,93 @@
+.watchlist {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.watchlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.watchlist-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #172b4d;
+}
+
+.btn-add {
+  background-color: transparent;
+  border: 1px solid #61dafb;
+  color: #61dafb;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #61dafb;
+  color: white;
+}
+
+.watchlist-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.watchlist-content th, 
+.watchlist-content td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.watchlist-content th {
+  font-weight: 600;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.watchlist-content tr:last-child td {
+  border-bottom: none;
+}
+
+.symbol {
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.name {
+  color: #6c757d;
+}
+
+.price {
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.change {
+  font-weight: 600;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.stock-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.stock-row:hover {
+  background-color: rgba(97, 218, 251, 0.05);
+}

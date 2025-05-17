@@ -1,0 +1,45 @@
+.stock-chart {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chart-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #172b4d;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.time-btn {
+  background-color: #f1f3f5;
+  border: none;
+  color: #6c757d;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.time-btn:hover, .time-btn.active {
+  background-color: #61dafb;
+  color: white;
+}
+
+.chart-container {
+  height: 300px;
+}

@@ -1,0 +1,58 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+main.content {
+  flex: 1;
+  padding: var(--spacing-lg) 0;
+}
+
+/* Page container */
+.page-container {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+}
+
+/* Page headers */
+.page-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-title {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-description {
+  color: var(--text-color-secondary);
+  max-width: 700px;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Dashboard layouts */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.dashboard-widget {
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+}
+
+/* Full width on mobile */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-widget {
+    grid-column: 1 / -1 !important;
+  }
+}
